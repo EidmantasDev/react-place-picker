@@ -1,9 +1,9 @@
 import { useRef, useState } from 'react';
 
-import Places from './components/Places.jsx';
+import Places from './components/Places/Places.jsx';
 import { AVAILABLE_PLACES } from './data.js';
-import Modal from './components/Modal.jsx';
-import DeleteConfirmation from './components/DeleteConfirmation.jsx';
+import Modal from './components/Modal/Modal.jsx';
+import DeleteConfirmation from './components/DeleteConfirmation/DeleteConfirmation.jsx';
 import logoImg from './assets/logo.png';
 
 function App() {
@@ -47,7 +47,7 @@ function App() {
       </Modal>
 
       <header>
-        <img src={logoImg} alt="Stylized globe" />
+        <img src={logoImg} alt='Stylized globe' />
         <h1>PlacePicker</h1>
         <p>
           Create your personal collection of places you would like to visit or
@@ -62,7 +62,7 @@ function App() {
           onSelectPlace={handleStartRemovePlace}
         />
         <Places
-          title="Available Places"
+          title='Available Places'
           places={AVAILABLE_PLACES}
           onSelectPlace={handleSelectPlace}
         />
