@@ -1,6 +1,6 @@
 # React place picker website
 
-A place picker website is a small website for choosing places to visit - to demonstrate handling react side effects and useEffect hook
+A place picker website is a small website for choosing places to visit - to demonstrate handling react side effects and useEffect, useCallback hooks
 
 ## Run Locally
 
